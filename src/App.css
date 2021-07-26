@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  background: whitesmoke ;
+  color :black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Navbar{
+  color : white;
+  padding: 10px;
+  background: blue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Input, .Post{
+  border: 1px solid hsl(216, 8%, 88%);
+  border-radius: 4px;
+  width: 576px;
+  margin: 20px auto;
+  background-color: aliceblue; 
 }
 
-.App-link {
-  color: #61dafb;
+.Input_header{
+  background-color: aliceblue;
+  border-bottom: 1px solid aliceblue;
+  border-radius: 2px 2px 0 0;
+  margin :0;
+  padding: 15px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Input_field{
+  width :100%;
+  height :100px;
+  padding :10px;
+  font-size:20px;
+  background-color: white;
+  border :none;
+}
+
+.Input_field:focus{
+  outline: none;
+}
+
+.Post{
+  padding: 15px;
+}
+
+.Post_img{
+  width: 100%;
+  margin-top: 15px;
+}
+
+.Post_del{
+  border: none;
+  background: none;
+  padding: 0;
+  float: right;
+  cursor: pointer;
 }
